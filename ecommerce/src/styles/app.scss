@@ -32,7 +32,10 @@ a {
 }
 
 @import "admin-styles/mixin";
-
+@import "home";
+@import "cart";
+@import "shipping";
+@import "login";
 @import "admin-styles/dashboard";
 @import "admin-styles/products";
 @import "admin-styles/chart";
@@ -55,6 +58,13 @@ a {
             color: $color3;
         }
     }
+
+}
+
+.heading {
+    @include heading;
+    text-align: center;
+    margin: 1rem 0;
 
 }
 

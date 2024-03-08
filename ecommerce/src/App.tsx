@@ -1,13 +1,17 @@
 import React from 'react'
 import './styles/app.scss'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Loader from './components/loader';
 import Header from './components/header';
+
 // lazy is used to stop rendering of components or pages which are not opened at given time
 const Home = lazy(() => import("./pages/home"));
 const Search = lazy(() => import("./pages/search"));
 const Cart = lazy(() => import("./pages/cart"));
+const Shipping = lazy(() => import("./pages/shipping"));
+const Login = lazy(() => import("./pages/login"));
 
 
 // importing admin routes
@@ -38,6 +42,8 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/search' element={<Search />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/shipping' element={<Shipping />} />
+          <Route path='/login' element={<Login />} />
 
           {/* admin route  */}
           <Route>
