@@ -24,7 +24,7 @@ const ProductCard = ({
 
             <div>
                 <button onClick={() => handler()}  >
-                    <FaPlus />
+                    <FaPlus />git 
                 </button>
             </div>
         </div>
