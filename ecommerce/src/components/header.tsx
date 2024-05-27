@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { FaSearch, FaShoppingBag, FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 
 const user = {
-    _id: "hfgd",
-    role: "admin"
+    _id: "",
+    role: ""
 }
 
 const Header = () => {
@@ -35,7 +35,7 @@ const Header = () => {
                                         Admin
                                     </Link>
                                 )}
-              
+
                                 <Link onClick={() => setisOpen(false)} to="/orders">
                                     Orders
                                 </Link>

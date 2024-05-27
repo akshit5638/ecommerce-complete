@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Loader from './components/loader';
 import Header from './components/header';
+import { Toaster } from 'react-hot-toast';
 
 // lazy is used to stop rendering of components or pages which are not opened at given time
 const Home = lazy(() => import("./pages/home"));
@@ -72,6 +73,7 @@ const App = () => {
 
         </Routes>
       </Suspense>
+      <Toaster />
     </Router>
   )
 }
